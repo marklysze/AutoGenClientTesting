@@ -7,6 +7,7 @@ It is useful for checking that the client class works with a range of messages a
 It is not exhausted, please feel free to add your own programs here, or recommend some.
 
 Tests so far:
+- Group Chat
 - Tool calling
 - Tool calling with streaming
 - Parallel tool calling
