@@ -84,3 +84,5 @@ res = user_proxy.initiate_chat(
     message="How much is 123.45 EUR in USD?",
     summary_method="reflection_with_llm",
 )
+
+print(res.summary["content"])
