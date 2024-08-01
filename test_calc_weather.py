@@ -115,3 +115,5 @@ res = user_proxy.initiate_chat(
     message="What's the weather in New York and can you tell me how much is 123.45 EUR in USD so I can spend it on my holiday?",
     summary_method="reflection_with_llm",
 )
+
+print(res.summary["content"])
