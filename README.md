@@ -16,3 +16,4 @@ Tests so far:
 - Code generation and execution
 - Two agents with termination
 - Two agents with termination and streaming
+- Image review
