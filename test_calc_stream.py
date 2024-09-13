@@ -86,4 +86,4 @@ res = user_proxy.initiate_chat(
     summary_method="reflection_with_llm",
 )
 
-print(res.summary["content"])
+print(res.summary["content"] if isinstance(res.summary, dict) else res.summary)
