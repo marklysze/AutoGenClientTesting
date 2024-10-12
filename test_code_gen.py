@@ -34,6 +34,7 @@ code_executor = LocalCommandLineCodeExecutor(work_dir=workdir)
 # The UserProxyAgent will execute the code that the AssistantAgent provides
 user_proxy_agent = UserProxyAgent(
     name="User",
+    human_input_mode="NEVER",
     code_execution_config={"executor": code_executor},
     is_termination_msg=lambda msg: "FINISH" in msg.get("content"),
 )
