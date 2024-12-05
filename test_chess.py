@@ -68,7 +68,7 @@ def make_move(move: Annotated[str, "Call this tool to make a move after you have
 from autogen import ConversableAgent, register_function
 
 player_white = ConversableAgent(
-    name="Player White",
+    name="Player_White",
     system_message="You are a chess player and you play as white. "
     # "First call get_legal_moves() first, to get list of legal moves. "
     # "Then call make_move(move) to make a move.",
@@ -79,7 +79,7 @@ player_white = ConversableAgent(
 )
 
 player_black = ConversableAgent(
-    name="Player Black",
+    name="Player_Black",
     system_message="You are a chess player and you play as black. "
     "First call the function get_legal_moves() first, to get list of legal moves. "
     "Then call the function make_move(move) to make a move."
@@ -100,7 +100,7 @@ def check_made_move(msg):
 
 
 board_proxy = ConversableAgent(
-    name="Board Proxy",
+    name="Board_Proxy",
     llm_config=False,
     # The board proxy will only terminate the conversation if the player has made a move.
     is_termination_msg=check_made_move,
